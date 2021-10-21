@@ -1,4 +1,4 @@
-# Content-Based-Movie-Recommender-System-with-sentiment-analysis-using-AJAX
+# Content-Based-Movie-Recommender-System-with-sentiment-analysis
 
 ![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
@@ -9,11 +9,7 @@ Content Based Recommender System recommends movies similar to the movie user lik
 
 The details of the movies(title, genre, runtime, rating, poster, etc) are fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, and using the IMDB id of the movie in the API, I did web scraping to get the reviews given by the user in the IMDB site using `beautifulsoup4` and performed sentiment analysis on those reviews.
 
-Check out the live demo: https://mrswsa.herokuapp.com/
-
 Use this URL - https://the-movie-buff.herokuapp.com/ - in case if you see application error in the above mentioned URL
-
-Link to youtube demo: https://www.youtube.com/watch?v=dhVePtyECFw
 
 ## How to get the API key?
 
@@ -27,25 +23,7 @@ Create an account in https://www.themoviedb.org/, click on the `API` link from t
 3. Replace YOUR_API_KEY in **both** the places (line no. 15 and 29) of `static/recommend.js` file and hit save.
 4. Open your terminal/command prompt from your project directory and run the file `main.py` by executing the command `python main.py`.
 5. Go to your browser and type `http://127.0.0.1:5000/` in the address bar.
-6. Hurray! That's it.
 
-## Architecture
-
-![IMG-20210306-WA0012](https://user-images.githubusercontent.com/36665975/110212434-597bb700-7ec1-11eb-9ffa-7ac319e33123.jpg)
-
-## Similarity Score : 
-
-   How does it decide which item is most similar to the item user likes? Here we use the similarity scores.
-   
-   It is a numerical value ranges between zero to one which helps to determine how much two items are similar to each other on a scale of zero to one. This similarity score is obtained measuring the similarity between the text details of both of the items. So, similarity score is the measure of similarity between given text details of two items. This can be done by cosine-similarity.
-   
-## How Cosine Similarity works?
-  Cosine similarity is a metric used to measure how similar the documents are irrespective of their size. Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional space. The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. The smaller the angle, higher the cosine similarity.
-  
-  ![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
-
-  
-More about Cosine Similarity : [Understanding the Math behind Cosine Similarity](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
 ### Sources of the datasets 
 
